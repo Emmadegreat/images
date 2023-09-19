@@ -16,7 +16,7 @@ hr {
     transform: rotate(0deg);
   }
   100% {
-    transform: rotate(100%);
+    transform: rotate(360deg);
   }
 }
 .home {
@@ -49,8 +49,11 @@ hr {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 3px solid red;
-  animation: spin is linear infinite;
+  animation: spin 3s linear infinite;
+}
+.home .card .spinner img {
+  width: 200px;
+  height: 200px;
 }
 .home .card .card-data {
   display: flex;

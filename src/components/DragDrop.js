@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react'
 import Gallery from '../gallery'
 import Picture from './Picture'
 import spinner from './images/spinner.png'
+import spinner1 from './images/spinner1.png'
 import { useDrop } from 'react-dnd'
 
 const DragDrop = () => {
@@ -14,7 +15,7 @@ const DragDrop = () => {
 
         setTimeout(() => {
             setIsLoading(false);
-        }, 2000)
+        }, 2500)
     }, )
 
     const [{ isOver }, drop] = useDrop(() => ({
@@ -43,7 +44,7 @@ const DragDrop = () => {
 
                 <div className='card'>
                     {isLoading ?
-                        (<div className="spinner"><img src={spinner} alt="spinner" /></div>)
+                        (<div className="spinner"><img src={spinner1} alt="spinner" /></div>)
                     :(
 
                             Gallery.map((picture) => {
