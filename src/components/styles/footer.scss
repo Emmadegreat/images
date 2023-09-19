@@ -1,0 +1,16 @@
+@import './_global';
+
+*{
+    @include global
+}
+footer{
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(193, 200, 200);
+    height: 80px;
+    text-align: center;
+    font-size: 1rem;
+}
