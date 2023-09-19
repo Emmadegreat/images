@@ -3,6 +3,7 @@ import { useDrag } from 'react-dnd'
 
 const Picture = ({ id, image }) => {
 
+    //drag function
     const [{ isDragging }, drag] = useDrag(() => ({
         type: 'image',
         item: {id:id},

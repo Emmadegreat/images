@@ -10,6 +10,7 @@ const DragDrop = () => {
 
     const [board, setBoard] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
+    const [search, setSearch] = useState("");
 
     useEffect(() => {
 
@@ -18,6 +19,16 @@ const DragDrop = () => {
         }, 2500)
     }, )
 
+    //search function
+    const searchGallery = Gallery.filter((item) => {
+        return item.tag.toLowerCase().includes(search.toLowerCase());
+    })
+
+    const onChangeHandler = (e) => {
+        setSearch(e.target.value)
+    }
+
+    //drop function
     const [{ isOver }, drop] = useDrop(() => ({
         accept: "image",
         drop: (item) => addImageToBoard(item.id),
@@ -38,16 +49,22 @@ const DragDrop = () => {
 
             <section className='home'>
                 <form action="">
-                    <input type="search" name="search" id="" placeholder="Search image category" />
+                    <input
+                        type="search"
+                        name="search" id=""
+                        placeholder="Search image category"
+                        value={search}
+                        onChange={onChangeHandler}
+                    />
                 </form>
-                <h1>My Images</h1><hr /><br />
+                <h1>Gallery</h1><hr /><br />
 
                 <div className='card'>
                     {isLoading ?
                         (<div className="spinner"><img src={spinner1} alt="spinner" /></div>)
                     :(
 
-                            Gallery.map((picture) => {
+                            searchGallery.map((picture) => {
                                 return (
                                     <div className='card-data'>
                                         <Picture
@@ -62,7 +79,7 @@ const DragDrop = () => {
                     )}
 
                 </div><hr />
-                <h2>Gallery</h2>
+                <h2>Drag and Drop to this Gallery</h2>
                 <div className="my-gallery" ref={drop}>
 
                     {
