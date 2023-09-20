@@ -5,7 +5,6 @@ import DragDrop from "./components/DragDrop";
 import Footer from "./components/footer";
 import { HTML5Backend } from 'react-dnd-html5-backend';
 import Header from "./components/header";
-import Home from "./components/pages/home";
 import Login from "./components/login";
 import { Navigate } from "react-router-dom";
 import React from "react";
