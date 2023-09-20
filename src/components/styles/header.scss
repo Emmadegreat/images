@@ -39,14 +39,21 @@ header{
 
 .login-wrapper{
     padding: 10rem 10px;
-
+    & h2{
+        text-align: center;
+        color: #fff;
+        margin-bottom: 1rem;
+        text-decoration: underline;
+    }
     & form{
         max-width: 300px;
         margin: auto;
-        //border: 2px solid green;
+        border: 1px solid #fff;
         display: flex;
         flex-direction: column;
+        border-radius: 1rem;
 
+        padding: 3rem 2rem;
         & input{
             height: 36px;
             padding: 0.3rem;
@@ -63,6 +70,7 @@ header{
             color: #fff;
             border-radius: 0.3rem;
             border-width: 0rem;
+            border: 1px solid #fff;
         }
     }
 }

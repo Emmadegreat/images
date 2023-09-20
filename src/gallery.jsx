@@ -31,7 +31,7 @@ const Gallery = [
     },
     {
         id: 7,
-        tag: "St Clement’s squares",
+        tag: "St Clement’s",
         im_source:"https://res.cloudinary.com/dmxyinuwy/image/upload/v1694032285/recipes/7_rq3e4k.jpg"
     },
     {
@@ -51,12 +51,12 @@ const Gallery = [
     },
     {
         id: 11,
-        name: "Hollandia",
+        tag: "Hollandia",
         im_source:"https://res.cloudinary.com/dmxyinuwy/image/upload/v1694033977/recipes/11_r6c3im.jpg"
     },
     {
         id: 12,
-        name: "image16",
+        tag: "image16",
         im_source:"https://res.cloudinary.com/dmxyinuwy/image/upload/v1694034678/recipes/16_haybyk.jpg"
     },
     /*{

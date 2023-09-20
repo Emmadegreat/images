@@ -3,6 +3,9 @@
 *{
     @include global
 }
+body{
+    background: #1d3344;
+}
 
 hr{
     color: #1d3344;
@@ -32,6 +35,9 @@ hr{
             border: 0.1rem solid #1d3344;
         }
     }
+    & h1{
+        color: #fff;
+    }
     @media (max-width:900px) {
 
         & form{
@@ -46,6 +52,7 @@ hr{
         grid-template-columns: repeat(4, 1fr);
         gap: 10px;
         padding-bottom: 3rem;
+        color: #fff;
 
         & .spinner{
             margin-left: 20rem;

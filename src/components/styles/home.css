@@ -6,6 +6,10 @@
   font-family: Poppins;
 }
 
+body {
+  background: #1d3344;
+}
+
 hr {
   color: #1d3344;
   width: 100%;
@@ -37,6 +41,9 @@ hr {
   border-radius: 0.5rem;
   border: 0.1rem solid #1d3344;
 }
+.home h1 {
+  color: #fff;
+}
 @media (max-width: 900px) {
   .home form input {
     width: 100%;
@@ -47,6 +54,7 @@ hr {
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
   padding-bottom: 3rem;
+  color: #fff;
 }
 .home .card .spinner {
   margin-left: 20rem;

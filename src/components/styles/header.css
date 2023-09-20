@@ -40,11 +40,20 @@ header ul li a {
 .login-wrapper {
   padding: 10rem 10px;
 }
+.login-wrapper h2 {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 1rem;
+  text-decoration: underline;
+}
 .login-wrapper form {
   max-width: 300px;
   margin: auto;
+  border: 1px solid #fff;
   display: flex;
   flex-direction: column;
+  border-radius: 1rem;
+  padding: 3rem 2rem;
 }
 .login-wrapper form input {
   height: 36px;
@@ -61,4 +70,5 @@ header ul li a {
   color: #fff;
   border-radius: 0.3rem;
   border-width: 0rem;
+  border: 1px solid #fff;
 }/*# sourceMappingURL=header.css.map */
