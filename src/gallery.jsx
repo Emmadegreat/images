@@ -39,7 +39,7 @@ const Gallery = [
         tag: "Buttercream",
         im_source:"https://res.cloudinary.com/dmxyinuwy/image/upload/v1694032320/recipes/8_tyxfbq.jpg"
     },
-    /*{
+    {
         id: 9,
         tag: "Peanut cake",
         im_source:"https://res.cloudinary.com/dmxyinuwy/image/upload/v1694032342/recipes/9_ip0t32.jpg"
@@ -51,15 +51,15 @@ const Gallery = [
     },
     {
         id: 11,
-        name: "",
-        image:"https://res.cloudinary.com/dmxyinuwy/image/upload/v1694033977/recipes/11_r6c3im.jpg"
+        name: "Hollandia",
+        im_source:"https://res.cloudinary.com/dmxyinuwy/image/upload/v1694033977/recipes/11_r6c3im.jpg"
     },
     {
         id: 12,
         name: "image16",
-        image:"https://res.cloudinary.com/dmxyinuwy/image/upload/v1694034678/recipes/16_haybyk.jpg"
+        im_source:"https://res.cloudinary.com/dmxyinuwy/image/upload/v1694034678/recipes/16_haybyk.jpg"
     },
-    {
+    /*{
         id: 13,
         name: "St Clement’s squares",
         image:"https://res.cloudinary.com/dmxyinuwy/image/upload/v1694034704/recipes/17_txaon5.jpg"

@@ -7,10 +7,20 @@ import { HTML5Backend } from 'react-dnd-html5-backend';
 import Header from "./components/header";
 import Home from "./components/pages/home";
 import Login from "./components/login";
+import { Navigate } from "react-router-dom";
 import React from "react";
 import ReactDOM from 'react-dom';
+import { auth } from './components/firebase';
+
+//import { useAuth0 } from "@auth0/auth0-react";
 
 function App() {
+
+  //const { isAuthenticated } = useAuth0();
+  //if (isLoading) {
+    //return <div>...isLoading</div>
+  //}
+
   return (
     <>
       <Router>
@@ -18,11 +28,10 @@ function App() {
           <div className="App">
           <Header/><br />
 
-
-
-          <Routes>
-            <Route path="/" element={< DragDrop />} />
-            <Route path="/login" element={< Login />} />
+            <Routes>
+              {/*<Route path="/" element={<DragDrop/> } />*/}
+              <Route path="/" element={ <DragDrop /> } />
+            <Route path="/login" element={<Login />} />
           </Routes><br />
           <Footer
             copyright="&copy; HNGX 2023"

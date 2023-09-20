@@ -37,10 +37,15 @@ hr {
   border-radius: 0.5rem;
   border: 0.1rem solid #1d3344;
 }
+@media (max-width: 900px) {
+  .home form input {
+    width: 100%;
+  }
+}
 .home .card {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
+  gap: 10px;
   padding-bottom: 3rem;
 }
 .home .card .spinner {
@@ -73,6 +78,22 @@ hr {
 .home .card .card-data p {
   font-size: 1rem;
   padding: 0.5rem;
+}
+@media (max-width: 900px) {
+  .home .card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding-bottom: 3.5rem;
+  }
+}
+@media (max-width: 580px) {
+  .home .card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding-bottom: 3.5rem;
+  }
 }
 .home .my-gallery {
   border: 1px solid red;
