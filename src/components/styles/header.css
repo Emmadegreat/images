@@ -23,6 +23,10 @@ header {
   color: #fff;
   margin-bottom: 300px;
 }
+header .logo {
+  width: 50px;
+  height: 50px;
+}
 header ul {
   display: flex;
   justify-content: space-around;

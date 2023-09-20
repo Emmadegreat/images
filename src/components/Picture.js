@@ -29,17 +29,13 @@ const Picture = ({ id, image, index, moveImage, tag }) => {
     }));*/
 
     return (
-        <div className=''>
-            <div ref={(node) => ref(drop(node))} style={{ width: '150px', height: '150px', margin: '1rem',  border: '1px solid red' }}>
+      <div className=''>
+        <div ref={(node) => ref(drop(node))} style={{ width: '150px', height: '150px', margin: '1rem',  border: '1px solid red' }}>
           <img src={image} alt={`Image ${id}`} style={{ width: '100%', height: '100%' }} />
           <p>{ tag}</p>
-    </div>
-            {/*<img
-                ref={drag}
-                src={image}
-                style={{width:"150px", height: "150px", margin: "1rem", border: isDragging? "1px solid red":"0px"}}
-    />*/}
         </div>
+
+      </div>
     )
 }
 
