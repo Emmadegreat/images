@@ -51,7 +51,7 @@ header ul li a {
   text-decoration: underline;
 }
 .login-wrapper form {
-  max-width: 300px;
+  max-width: 400px;
   margin: auto;
   border: 1px solid #fff;
   display: flex;
@@ -60,9 +60,9 @@ header ul li a {
   padding: 3rem 2rem;
 }
 .login-wrapper form input {
-  height: 36px;
-  padding: 0.3rem;
-  font-size: 1.1rem;
+  height: 38px;
+  padding: 0.4rem;
+  font-size: 1rem;
   border-radius: 0.3rem;
 }
 .login-wrapper form button {

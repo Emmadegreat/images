@@ -2,12 +2,10 @@ import './styles/header.css'
 
 import React, {useState} from 'react'
 
-import auth from './firebase'
-
-//import { useAuth0 } from '@auth0/auth0-react'
+import auth  from './firebase'
+import { signInWithEmailAndPassword } from 'firebase/auth'
 
 const Login = () => {
-    //const { loginWithRedirect } = useAuth0();
 
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("");
@@ -15,49 +13,39 @@ const Login = () => {
 
     const handleLogin = async (e) => {
         e.preventDefault();
-        if (email === "user@example.com" && password === "1Password") {
-           setTimeout(() => {
-                alert(`${email} you have been successfully logged`);
-                window.location.href = '/';
-           }, 2000);
 
-       } else {
-           alert(`wrong user input try again!`)
-       }
+        const email = e.target.email.value;
+        const password = e.target.password.value;
 
-            /*if (email === 'user@example.com' && password === '1Password') {
-                try {
-                    await auth.signInWithEmailAndPassword(email, password).then(user => {
-                        console.log(user);
-                    });
+
+        if (email === 'user@example.com' && password === '1Password') {
+            try {
+                signInWithEmailAndPassword(auth, email, password).then(user => {
+                    console.log(user, 'loggedin');
                     window.location.href='/'
-                    //await loginWithRedirect({
-                    //screen_hint: 'login',
-                    //login_hint: 'user@example.com',
-                    //redirectUri: window.href = '/',
-                    //});
-                } catch (error) {
-                    setError('An error occurred during login');
-                    console.log(error);
-                }
-            } else {
-                setError('Invalid email or password! Try again.');
-            }*/
+                });
+
+            } catch (error) {
+                setError('An error occurred during login');
+                console.log(error);
+            }
+        } else {
+            setError('Invalid email or password! Try again.');
+        }console.log(handleLogin);
     };
-    console.log(handleLogin);
+
 
 
     return (
         <>
-
             <div className='login-wrapper'>
                 <h2>Sign In</h2>
-                {error && <p style={{color:"red"}}>{ error}</p>}
+                {error && <p style={{ color: "red", textAlign:"center" }}>{error}</p>}
                 <form onSubmit={handleLogin}>
                     <input
                         type="email"
                         name="email" id=""
-                        placeholder='Email'
+                        placeholder='interns@hngx.com'
                         value={email}
                         onChange={(e)=>setEmail(e.target.value)}
                     /><br />
@@ -65,7 +53,7 @@ const Login = () => {
                         type="password"
                         name="password"
                         value={password}
-                        placeholder='Password'
+                        placeholder='..............'
                         onChange={(e)=>setPassword(e.target.value)}
                     /><br />
                     <button type='submit'>Login</button>

@@ -58,27 +58,8 @@ const Gallery = [
         id: 12,
         tag: "image16",
         im_source:"https://res.cloudinary.com/dmxyinuwy/image/upload/v1694034678/recipes/16_haybyk.jpg"
-    },
-    /*{
-        id: 13,
-        name: "St Clement’s squares",
-        image:"https://res.cloudinary.com/dmxyinuwy/image/upload/v1694034704/recipes/17_txaon5.jpg"
-    },
-    {
-        id: 14,
-        name: "Chocolate and butter",
-        image:"https://res.cloudinary.com/dmxyinuwy/image/upload/v1694034717/recipes/18_wsks9b.jpg"
-    },
-    {
-        id: 15,
-        name: "celebration cake",
-        image:"https://res.cloudinary.com/dmxyinuwy/image/upload/v1694034726/recipes/19_x1nkao.jpg"
-    },
-    {
-        id: 26,
-        name: "Tunnock’s teacake traybake",
-        image:"https://res.cloudinary.com/dmxyinuwy/image/upload/v1694034736/recipes/20_qaylnz.jpg"
-    },*/
+    }
+
 
 ]
 

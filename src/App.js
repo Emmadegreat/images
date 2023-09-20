@@ -1,3 +1,4 @@
+import React, { useEffect, useState } from "react";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 
 import { DndProvider } from "react-dnd";
@@ -7,17 +8,22 @@ import Header from "./components/header";
 import Home from "./components/home";
 import Login from "./components/login";
 import { Navigate } from "react-router-dom";
-import React from "react";
-import { auth } from './components/firebase';
-
-//import { useAuth0 } from "@auth0/auth0-react";
+import auth  from './components/firebase';
 
 function App() {
 
-  //const { isAuthenticated } = useAuth0();
-  //if (isLoading) {
-    //return <div>...isLoading</div>
-  //}
+  const [isAuthenticated, setIsAuthenticatede] = useState(false);
+
+  useEffect(() => {
+
+    auth.onAuthStateChanged((user) => {
+      if (user) {
+        setIsAuthenticatede(true);
+      } else {
+        setIsAuthenticatede(false);
+      }
+    })
+  }, [])
 
   return (
     <>
@@ -27,8 +33,8 @@ function App() {
           <Header/><br />
 
             <Routes>
-              {/*<Route path="/" element={<DragDrop/> } />*/}
-              <Route path="/" element={ <Home /> } />
+              <Route path="/" element={<Home/> } />
+              {/*<Route path="/" element={isAuthenticated ?( <Home />):(<Navigate to="/login"/>) }*/} />
             <Route path="/login" element={<Login />} />
           </Routes><br />
           <Footer
