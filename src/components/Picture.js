@@ -21,12 +21,9 @@ const Picture = ({ id, image, index, moveImage, tag }) => {
 
 
     return (
-      <div className=''>
-        <div ref={(node) => ref(drop(node))} style={{ width: '150px', height: '150px', margin: '1rem' }}>
-          <img src={image} alt={`Image ${id}`} style={{ width: '100%', height: '100%' }} />
-          <p>{ tag}</p>
-        </div>
-
+      <div className='card-data' ref={(node) => ref(drop(node))}>
+        <img src={image} alt={`Image ${tag}`} />
+        <p>{ tag}</p>
       </div>
     )
 }

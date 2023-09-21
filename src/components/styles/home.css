@@ -52,7 +52,7 @@ hr {
 .home .card {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
+  gap: 15px;
   padding-bottom: 3rem;
   color: #fff;
 }
@@ -72,16 +72,26 @@ hr {
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
-  border: 1px solid #1d3344;
   background-color: #1d3344;
   text-align: center;
   color: #fff;
+  border: 1.5px dotted #fff;
+  border-radius: 1.2rem;
+  margin-bottom: 2rem;
+}
+.home .card .card-data:hover {
+  overflow: hidden;
+  transform: translate(1.1);
 }
 .home .card .card-data img {
   width: 100%;
+  border-top-right-radius: 1.2rem;
+  border-top-left-radius: 1.2rem;
+  height: 100%;
 }
-.home .card .card-data div {
-  padding: 0.8rem 0rem;
+.home .card .card-data img:hover {
+  overflow: hidden;
+  cursor: pointer;
 }
 .home .card .card-data p {
   font-size: 1rem;
