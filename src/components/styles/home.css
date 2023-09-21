@@ -99,6 +99,7 @@ hr {
 .home .card .card-data img:hover {
   overflow: hidden;
   cursor: pointer;
+  transform: scale(1.5);
 }
 .home .card .card-data p {
   font-size: 1rem;

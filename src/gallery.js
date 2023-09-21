@@ -46,8 +46,8 @@ const Gallery = [
     },
     {
         id: 10,
-        tag: "Spring cupcakes",
-        im_source:"https://res.cloudinary.com/dmxyinuwy/image/upload/v1694032364/recipes/10_romb2m.jpg"
+        tag: "Food",
+        im_source:"https://res.cloudinary.com/dmxyinuwy/image/upload/v1673924860/samples/food/fish-vegetables.jpg"
     },
     {
         id: 11,
@@ -56,8 +56,8 @@ const Gallery = [
     },
     {
         id: 12,
-        tag: "Nature",
-        im_source:"https://res.cloudinary.com/dmxyinuwy/image/upload/v1694034068/recipes/14_elfkmp.jpg"
+        tag: "Beach",
+        im_source:"https://res.cloudinary.com/dmxyinuwy/image/upload/v1673924865/samples/landscapes/beach-boat.jpg"
     }
 
 
