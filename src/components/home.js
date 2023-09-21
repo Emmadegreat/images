@@ -38,6 +38,7 @@ const Home = () => {
     return (
         <>
             <section className='home'>
+                <div className="spacer"></div>
                 <form action="">
                     <input
                         type="search"

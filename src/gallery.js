@@ -41,13 +41,13 @@ const Gallery = [
     },
     {
         id: 9,
-        tag: "Laptop",
-        im_source:"https://res.cloudinary.com/dmxyinuwy/image/upload/v1695287410/samples/landscapes/1_xwxqvh.png"
+        tag: "Layered-cake",
+        im_source:"https://res.cloudinary.com/dmxyinuwy/image/upload/v1694033977/recipes/11_r6c3im.jpg"
     },
     {
         id: 10,
-        tag: "Food",
-        im_source:"https://res.cloudinary.com/dmxyinuwy/image/upload/v1673924860/samples/food/fish-vegetables.jpg"
+        tag: "Flower",
+        im_source:"https://res.cloudinary.com/dmxyinuwy/image/upload/v1694032364/recipes/10_romb2m.jpg"
     },
     {
         id: 11,

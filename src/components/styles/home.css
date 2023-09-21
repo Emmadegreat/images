@@ -31,7 +31,10 @@ hr {
   align-items: center;
 }
 .home form {
-  margin-bottom: 2rem;
+  margin: 2rem 0rem;
+}
+.home form .spacer {
+  height: 50px;
 }
 .home form input {
   width: 500px;
@@ -51,7 +54,7 @@ hr {
 }
 @media (max-width: 600px) {
   .home {
-    padding: 2rem;
+    padding: 4rem;
   }
 }
 .home .card {
