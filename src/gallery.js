@@ -56,8 +56,8 @@ const Gallery = [
     },
     {
         id: 12,
-        tag: "Agriculture",
-        im_source:"https://res.cloudinary.com/dmxyinuwy/image/upload/v1695251119/farmer_pj24cl.jpg"
+        tag: "Nature",
+        im_source:"https://res.cloudinary.com/dmxyinuwy/image/upload/v1694034068/recipes/14_elfkmp.jpg"
     }
 
 

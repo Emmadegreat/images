@@ -24,7 +24,7 @@ hr {
   }
 }
 .home {
-  padding: 4rem 5rem;
+  padding: 4rem 3rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -47,6 +47,11 @@ hr {
 @media (max-width: 900px) {
   .home form input {
     width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  .home {
+    padding: 2rem;
   }
 }
 .home .card {
@@ -82,6 +87,8 @@ hr {
 .home .card .card-data:hover {
   overflow: hidden;
   transform: translate(1.1);
+  box-shadow: rgb(226, 221, 219) 5px 0.5px 10px;
+  transition: all 1s;
 }
 .home .card .card-data img {
   width: 100%;
