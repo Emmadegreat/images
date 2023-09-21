@@ -4,10 +4,7 @@ import React, { useEffect, useState } from 'react'
 
 import Gallery from '../gallery'
 import Picture from './Picture'
-import spinner from './images/spinner.png'
 import spinner1 from './images/spinner1.png'
-import { useAuth0 } from '@auth0/auth0-react'
-import { useDrop } from 'react-dnd'
 
 const Home = () => {
 

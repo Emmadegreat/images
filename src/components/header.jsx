@@ -9,7 +9,7 @@ const Header = () => {
     return (
         <>
             <header>
-                <Link to="/"><img src={ spinner} alt="logo" className='logo'/></Link>
+                <Link><img src={ spinner} alt="logo" className='logo'/></Link>
                 <ul>
                     <li><NavLink to="/login">Login</NavLink></li>
                     <li><NavLink to="/login">Logout</NavLink></li>

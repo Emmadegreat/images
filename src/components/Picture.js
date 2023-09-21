@@ -2,7 +2,6 @@ import React from 'react'
 import { useDrag } from 'react-dnd'
 import { useDrop } from 'react-dnd';
 
-//const Picture = ({ id, image }) => {
 const Picture = ({ id, image, index, moveImage, tag }) => {
   const [, ref] = useDrag({
     type: 'image',
@@ -19,14 +18,7 @@ const Picture = ({ id, image, index, moveImage, tag }) => {
     },
   });
 
-    //drag function
-    /*const [{ isDragging }, drag] = useDrag(() => ({
-        type: 'image',
-        item: {id:id},
-        collect: (monitor) => ({
-            isDragging: !!monitor.isDragging(),
-        }),
-    }));*/
+
 
     return (
       <div className=''>

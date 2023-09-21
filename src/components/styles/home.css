@@ -94,6 +94,11 @@ hr {
     gap: 15px;
     padding-bottom: 3.5rem;
   }
+  .home .card .spinner {
+    margin-left: 0rem;
+    width: 300px;
+    display: flex;
+  }
 }
 @media (max-width: 580px) {
   .home .card {

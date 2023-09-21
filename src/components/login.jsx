@@ -22,9 +22,8 @@ const Login = () => {
             try {
                 signInWithEmailAndPassword(auth, email, password).then(user => {
                     console.log(user, 'loggedin');
-
+                    window.location.href='/home'
                 });
-                window.location.href='/'
 
             } catch (error) {
                 setError('An error occurred during login');
