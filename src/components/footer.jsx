@@ -6,7 +6,7 @@ const Footer = (props) => {
     return (
         <>
             <footer>
-                <p>{ props.copyright}</p>
+                <p>{props.copyright} {props.year }</p>
 
             </footer>
 

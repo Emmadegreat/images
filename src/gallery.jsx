@@ -51,13 +51,13 @@ const Gallery = [
     },
     {
         id: 11,
-        tag: "Hollandia",
-        im_source:"https://res.cloudinary.com/dmxyinuwy/image/upload/v1694033977/recipes/11_r6c3im.jpg"
+        tag: "Sports",
+        im_source:"https://res.cloudinary.com/dmxyinuwy/image/upload/v1673924880/cld-sample-3.jpg"
     },
     {
         id: 12,
-        tag: "image16",
-        im_source:"https://res.cloudinary.com/dmxyinuwy/image/upload/v1694034678/recipes/16_haybyk.jpg"
+        tag: "Agriculture",
+        im_source:"https://res.cloudinary.com/dmxyinuwy/image/upload/v1695251119/farmer_pj24cl.jpg"
     }
 
 

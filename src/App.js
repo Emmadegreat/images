@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 
+import { Auth } from "firebase/auth";
 import { DndProvider } from "react-dnd";
 import Footer from "./components/footer";
 import { HTML5Backend } from 'react-dnd-html5-backend';
@@ -8,11 +9,17 @@ import Header from "./components/header";
 import Home from "./components/home";
 import Login from "./components/login";
 import { Navigate } from "react-router-dom";
-import auth  from './components/firebase';
+import { getAuth } from "firebase/auth";
+
+//import  useAuth   from './components/firebase';
 
 function App() {
+  const auth = getAuth();
 
   const [isAuthenticated, setIsAuthenticatede] = useState(false);
+  //const Auth = useAuth();
+
+
 
   useEffect(() => {
 
@@ -23,7 +30,7 @@ function App() {
         setIsAuthenticatede(false);
       }
     })
-  }, [])
+  }, [auth])
 
   return (
     <>
@@ -33,12 +40,13 @@ function App() {
           <Header/><br />
 
             <Routes>
-              <Route path="/" element={<Home/> } />
-              {/*<Route path="/" element={isAuthenticated ?( <Home />):(<Navigate to="/login"/>) }*/} />
+              {/*<Route path="/" element={<Home/> } />*/}
+              <Route path="/" element={ isAuthenticated ? <Home />: <Login /> } />
             <Route path="/login" element={<Login />} />
           </Routes><br />
           <Footer
-            copyright="&copy; HNGX 2023"
+              copyright="&copy; EMF  - HNGX"
+              year={new Date().getFullYear()}
             />
 
         </div>

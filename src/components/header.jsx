@@ -12,7 +12,7 @@ const Header = () => {
                 <Link to="/"><img src={ spinner} alt="logo" className='logo'/></Link>
                 <ul>
                     <li><NavLink to="/login">Login</NavLink></li>
-                    <li><NavLink to="/">Logout</NavLink></li>
+                    <li><NavLink to="/login">Logout</NavLink></li>
                 </ul>
             </header>
 
