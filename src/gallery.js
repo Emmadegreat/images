@@ -27,7 +27,7 @@ const Gallery = [
     {
         id: 6,
         tag: "Spiced-cake",
-        im_source:"https://res.cloudinary.com/dmxyinuwy/image/upload/v1694032256/recipes/6_qlgydf.jpg"
+        im_source:"https://res.cloudinary.com/dmxyinuwy/image/upload/v1694032342/recipes/9_ip0t32.jpg"
     },
     {
         id: 7,
@@ -41,8 +41,8 @@ const Gallery = [
     },
     {
         id: 9,
-        tag: "Peanut cake",
-        im_source:"https://res.cloudinary.com/dmxyinuwy/image/upload/v1694032342/recipes/9_ip0t32.jpg"
+        tag: "Laptop",
+        im_source:"https://res.cloudinary.com/dmxyinuwy/image/upload/v1695287410/samples/landscapes/1_xwxqvh.png"
     },
     {
         id: 10,
@@ -51,13 +51,13 @@ const Gallery = [
     },
     {
         id: 11,
-        tag: "Sports",
-        im_source:"https://res.cloudinary.com/dmxyinuwy/image/upload/v1673924880/cld-sample-3.jpg"
+        tag: "Breakfast",
+        im_source:"https://res.cloudinary.com/dmxyinuwy/image/upload/v1694034021/recipes/12_lrccgx.jpg"
     },
     {
         id: 12,
-        tag: "Beach",
-        im_source:"https://res.cloudinary.com/dmxyinuwy/image/upload/v1673924865/samples/landscapes/beach-boat.jpg"
+        tag: "Candle-cake",
+        im_source:"https://res.cloudinary.com/dmxyinuwy/image/upload/v1694034726/recipes/19_x1nkao.jpg"
     }
 
 

@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from "react";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 
 import { Auth } from "firebase/auth";
@@ -8,11 +7,10 @@ import { HTML5Backend } from 'react-dnd-html5-backend';
 import Header from "./components/header";
 import Home from "./components/home";
 import Login from "./components/login";
+import React from "react";
 import { getAuth } from "firebase/auth";
 
 function App() {
-  const auth = getAuth();
-
 
   return (
     <>
