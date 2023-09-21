@@ -1,70 +1,33 @@
-# Getting Started with Create React App
+HNGX FRONTEND TACK TASK 3
+Title: Drag and Drop Image Gallery.
+Objectives:
+To develop an image gallery Application that will enable users to: 
+> Drag and drop or rearrange images within the gallery.
+> The users will be able to perform filter query by the search the images by their tag name.
+> That will aunthenticate users, hence only authenticated users will access the gallery.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The above features of the application was successfully achieved.
 
-## Available Scripts
+The drag and drop functionality of app was achieved with the help of React DnD in built component and its associated hocks = useDrag() and useDro().
+This hooks was tweaked to achieve the dragging, dropping and rearrangement of the images within the gallery.
 
-In the project directory, you can run:
+The images used was stored in an array called gallery.
+It was looped to display them in a grip according to the project instruction.
 
-### `npm start`
+The filter functionality was also performed with the iteration of the gallery array.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The authentication function was also done with Firebase and React integration.
+The login form tests the users details to know it it matches with the registered email and password.
+However, the given email and password == "user@example.com" and "1Password" was registered in the Firebase database first before using it to login, hence any user signing in 
+apart from the above emails will be denied access to the application.
+A loading effect was also captured before the images display. 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Css was also used to add animations, and other aesthetic features to the application.
 
-### `npm test`
+npx create-reacte-app mygallery ==== command to create the application
+cd ....\mygallery ==== command to get to the application folder.
+npm start ==== command to start the application.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+GitHub hosted link: https://images-tau-two.vercel.app/login
+GitHub repository link: https://github.com/Emmadegreat/images
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
