@@ -123,14 +123,5 @@ hr {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
-    padding-bottom: 3.5rem;
   }
-}
-.home .my-gallery {
-  border: 1px solid red;
-  height: 400px;
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 30px;
 }/*# sourceMappingURL=home.css.map */

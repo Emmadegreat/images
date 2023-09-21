@@ -124,20 +124,8 @@ hr{
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 15px;
-            padding-bottom: 3.5rem;
+            //padding-bottom: 3rem;
         }
     }
 
-    & .my-gallery{
-        border: 1px solid red;
-        height: 400px;
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        gap: 30px;
-
-        & img{
-            //width: 200px;
-        }
-    }
 }
