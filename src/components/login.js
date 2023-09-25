@@ -1,9 +1,9 @@
 import './styles/header.css'
 
 import React, {useState} from 'react'
+import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from 'firebase/auth'
 
 import auth  from './firebase'
-import { signInWithEmailAndPassword } from 'firebase/auth'
 
 const Login = () => {
 
@@ -16,6 +16,9 @@ const Login = () => {
 
         const email = e.target.email.value;
         const password = e.target.password.value;
+        //const emailHandler = ({setEmail, setPassword}) => {e.target.value}
+
+
 
 
         if (email === 'user@example.com' && password === '1Password') {
@@ -39,21 +42,23 @@ const Login = () => {
     return (
         <>
             <div className='login-wrapper'>
-                <h2>Sign In</h2>
+
                 {error && <p style={{ color: "red", textAlign:"center" }}>{error}</p>}
                 <form onSubmit={handleLogin}>
+                    <label htmlFor="email">Email</label>
                     <input
                         type="email"
                         name="email" id=""
-                        placeholder='interns@hngx.com'
+                        placeholder='user@example.com'
                         value={email}
                         onChange={(e)=>setEmail(e.target.value)}
                     /><br />
+                    <label htmlFor="password">Password</label>
                     <input
                         type="password"
                         name="password"
                         value={password}
-                        placeholder='..............'
+                        placeholder='...........................'
                         onChange={(e)=>setPassword(e.target.value)}
                     /><br />
                     <button type='submit'>Login</button>

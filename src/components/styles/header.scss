@@ -10,24 +10,27 @@ a{
 
 header{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     height: 70px;
     width: 100%;
     position: fixed;
+    padding: 0rem 4rem;
     z-index: 1000;
-    background-color: #1d3344;
-    color: #fff;
+    background-color: #fff;
+    border-bottom: 1px solid #1d3344;
+    color: #1d3344;
     margin-bottom: 300px;
 
     & .logo{
         width: 50px;
         height: 50px;
+        border-radius: 50%;
     }
 
     & ul{
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         & li{
             list-style-type: none;
             margin: 0rem 1rem;
@@ -35,37 +38,37 @@ header{
             & a{
                 text-decoration: none;
                 font-size: 1.2rem;
-                color: #fff;
+                color: #1d3344;
             }
         }
     }
 
 }
 
+
+//login page styling
 .login-wrapper{
     padding: 10rem 10px;
 
-
-    & h2{
-        text-align: center;
-        color: #fff;
-        margin-bottom: 1rem;
-        text-decoration: underline;
-    }
     & form{
         max-width: 400px;
         margin: auto;
-        border: 1px solid #fff;
+        border: 1px solid #1d3344;
         display: flex;
         flex-direction: column;
         border-radius: 1rem;
-
         padding: 3rem 2rem;
+
         & input{
             height: 38px;
             padding: 0.4rem;
             font-size: 1rem;
+            border: 1px solid #1d3344;
             border-radius: 0.3rem;
+        }
+
+        & label{
+            margin: 0rem 0rem 0.1rem 0.2rem;
         }
 
         & button{
@@ -73,11 +76,35 @@ header{
             padding: 0.2rem;
             font-size: 1.1rem;
             cursor: pointer;
-            background-color: #1d3344;
-            color: #fff;
+            color: #1d3344;
             border-radius: 0.3rem;
+            background-color: #c1c8c8;
             border-width: 0rem;
-            border: 1px solid #fff;
+            border: 1px solid #1d3344;
         }
     }
+}
+@media (max-width:600px) {
+    header{
+        padding: 0rem 1.5rem;
+
+        & .logo{
+            width: 40px;
+            height: 40px;
+        }
+
+        ul li a{
+            font-size: 1.1rem;
+        }
+    }
+
+    .login-wrapper {
+        padding: 10rem 15px;
+
+        & form{
+            max-width: 380px;
+            padding: 1.5rem 2rem;
+        }
+    }
+
 }

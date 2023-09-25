@@ -3,9 +3,6 @@
 *{
     @include global
 }
-body{
-    background: #1d3344;
-}
 
 hr{
     color: #1d3344;
@@ -25,14 +22,15 @@ hr{
 
     & form{
         margin: 2rem 0rem;
+        width: 98%;
 
         & .spacer{
             height: 50px;
         }
 
         & input{
-            width: 500px;
-            max-width: 100%;
+            width: 100%;
+            //max-width: 100%;
             height: 40px;
             padding: 0.5rem;
             border-radius: 0.5rem;
@@ -47,12 +45,12 @@ hr{
         & form{
 
             & input{
-                width: 100%;
+                max-width: 100%;
             }
         }
     }
     @media (max-width:600px) {
-        padding: 4rem;
+        padding: 3rem 2rem 2rem 2rem;
     }
 
     & .card{
@@ -63,12 +61,10 @@ hr{
         color: #fff;
 
         & .spinner{
-            margin-left: 20rem;
-            width: 500px;
-            display: flex;
+            color: #1d3344;
+            font-size: 1.5rem;
             align-items: center;
-            justify-content: center;
-            animation: spin 3s linear infinite;
+            //animation: spin 3s linear infinite;
 
             & img{
                 width: 200px;
@@ -83,7 +79,7 @@ hr{
             background-color: #1d3344;
             text-align: center;
             color: #fff;
-            border: 1.5px dotted #fff;
+            border: 1px solid #1d3344;
             border-radius: 1.2rem;
             margin-bottom: 2rem;
 
@@ -117,16 +113,18 @@ hr{
             grid-template-columns: repeat(3, 1fr);
             gap: 15px;
             padding-bottom: 3.5rem;
-
-            & .spinner{
-                margin-left: 0rem;
-                width: 300px;
-                display: flex;
-            }
         }
-        @media (max-width:580px) {
+
+        @media (max-width:768px) {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            padding-bottom: 3.5rem;
+        }
+
+        @media (max-width:580px) {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
             gap: 15px;
             //padding-bottom: 3rem;
         }

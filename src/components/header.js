@@ -3,13 +3,13 @@ import './styles/header.css'
 import { Link, NavLink } from 'react-router-dom'
 
 import React from 'react'
-import spinner from './images/spinner.png'
+import icon from './images/icon.jpg'
 
 const Header = () => {
     return (
         <>
             <header>
-                <Link><img src={ spinner} alt="logo" className='logo'/></Link>
+                <Link><img src={ icon } alt="logo" className='logo'/></Link>
                 <ul>
                     <li><NavLink to="/login">Login</NavLink></li>
                     <li><NavLink to="/login">Logout</NavLink></li>

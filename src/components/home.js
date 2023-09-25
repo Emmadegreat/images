@@ -4,7 +4,6 @@ import React, { useEffect, useState } from 'react'
 
 import Gallery from '../gallery'
 import Picture from './Picture'
-import spinner1 from './images/spinner1.png'
 
 const Home = () => {
 
@@ -16,7 +15,7 @@ const Home = () => {
 
         setTimeout(() => {
             setIsLoading(false);
-        }, 2500)
+        }, 2000)
     }, )
 
     const onChangeHandler = (e) => {
@@ -48,11 +47,11 @@ const Home = () => {
                         onChange={onChangeHandler}
                     />
                 </form>
-                <h1>Gallery</h1><hr /><br />
+                <h1>Gallery</h1><br />
                 <div className="card">
                     {isLoading ? (
                         <div className="spinner">
-                            <img src={spinner1} alt="spinner" />
+                            <p>Loading...</p>
                         </div>
                             ) : filteredBoard.length > 0 ? (
                                 filteredBoard.map((picture, index) => (
@@ -71,7 +70,6 @@ const Home = () => {
                     )}
 
                 </div>
-                <hr />
             </section>
 
         </>
